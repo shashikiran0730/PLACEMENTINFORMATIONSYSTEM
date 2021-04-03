@@ -11,7 +11,6 @@
   <meta content="" name="description">
 
   <meta content="" name="keywords">
-  <link href="assets/img/favicon.png" rel="icon">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -48,6 +47,7 @@
           <li><a href="index.jsp">Home</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
            <li><a class="nav-link scrollto" href="Login.html">Login</a></li>
+            <li><a class="nav-link scrollto" href="adminloginform.html">AdminLogin</a></li>
           
      </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -78,47 +78,7 @@
   <main id="main">
     <!-- ======= About Section ======= -->
      
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          
-          <p>PLACEMENT RECUITMENTS</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="fade-up" data-aos-delay="200">
-              <img src=" " class="img-fluid" alt="">
-              <h3>STUDENTS</h3>
-              <p>Enable students to create job profiles, upload resumes, search and apply for jobs and internships with real-time status tracking from anywhere and anytime.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>COLLEGES</h3>
-              <p>Capture data and reports related to students and employers which can be accessed by administrators with a single click in a safe and secure environment.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>COMPANIES</h3>
-              <p>Easily screen students for exact requirements and get access to entire student database.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Values Section -->
+ 
 
 
 
@@ -134,42 +94,7 @@
           <p>Contact Us</p>
         </header>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street,<br>karimnagar Telangana 505001</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+91 9603955144<br>+91 9505755154</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>placementsystem@gmail.com<br>placementinfo@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Sunday<br>24/7</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        
 
           <div class="col-lg-6">
             <form action="contactus" method="post">
@@ -192,9 +117,9 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+              
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                
 
                   <button type="submit">Send Message</button>
                 </div>

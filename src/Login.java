@@ -11,14 +11,11 @@ public class Login extends HttpServlet {
       String email = request.getParameter("email");
         String pass = request.getParameter("pass");
         
-        if(email=="admin@gmail.com" && pass=="admin") {
-        	
+        if(email=="admin@gmail.com") {
+        	 System.out.println("emial");
         }
         
         else {
-        	
-        
-        
         if(Validate.checkUser(email, pass))
         {
         	if(Validate.isTeacher(email)) {

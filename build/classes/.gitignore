@@ -1,2 +1,6 @@
-/editdetails.class
 /admin.class
+/adminlogin.class
+/placementadmin.class
+/placementadmin$teacheraccess.class
+/placementadmin$placmentadmin.class
+/placementadmin$placment.class

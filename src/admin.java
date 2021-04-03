@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,50 +31,42 @@ public class admin extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+    public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException 
+    {  
+    	String emailadmin=req.getParameter("adminemail");
+    	String passadmin=req.getParameter("adminpass");
+    	if(emailadmin.equals(emailadmin)) {
+      try {          
+          Class.forName("com.mysql.cj.jdbc.Driver");
+          Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root",new Credentials().password);
+          Statement ps = con.createStatement();
+          ResultSet rs =ps.executeQuery("select * from applications");
+          ArrayList<qwerty.user> al=new ArrayList<qwerty.user>();
+          while(rs.next()) {
+          	al.add(new user(
+          			rs.getString(1),
+          			rs.getString(2),
+          			rs.getString(3),
+          			rs.getString(4),
+                  	rs.getString(5),
+                  	rs.getString(6),
+                  	rs.getString(7),
+                  	rs.getString(8),
+                  	rs.getString(9),
+                  	rs.getString(10)
+          			));
+          	}
+          RequestDispatcher rd=req.getRequestDispatcher("admin.jsp");
+          req.setAttribute("users",al);
+          rd.forward(req,res);
+          con.close();
+      }
+      catch(Exception e) {
+         System.out.println("error");
+      }}
+    	else {
+    		System.out.println("hyy");
+    	}
+  }   
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-			try {
-				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root",new Credentials().password);
-	            Statement ps = con.createStatement();
-	            ResultSet rs =ps.executeQuery("select * from applications;");
-	            user u=new user();
-	            while(rs.next()) {
-	            	u.setName(rs.getString(1));
-	            	u.setMobile(rs.getString(2));
-	            	u.setEmail1(rs.getString(3));
-	            	u.setAdar(rs.getString(4));
-	            	u.setDob(rs.getString(5));
-	            	u.setAdd(rs.getString(6));
-	            	u.setBranch(rs.getString(7));
-	            	u.setCgpa(rs.getString(8));
-	            	u.setLink(rs.getString(9));
-	            	u.setDegree(rs.getString(10));
-	              }
-	            
-	            RequestDispatcher rd=request.getRequestDispatcher("admin.jsp");
-	            request.setAttribute("u",u);
-	            rd.forward(request, response);
-			} 
-			catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		}
-	}
-
+}

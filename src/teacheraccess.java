@@ -40,7 +40,7 @@ public class teacheraccess extends HttpServlet
             	}
             RequestDispatcher rd=req.getRequestDispatcher("teacher.jsp");
             req.setAttribute("users",al);
-            rd.forward(req, res);
+            rd.forward(req,res);
             con.close();
         }
         catch(Exception e) {

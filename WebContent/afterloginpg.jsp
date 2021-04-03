@@ -7,7 +7,6 @@
 <title>pg students</title>
 </head>
 <body>
-
 <style>
 .dropdown{
 position:relative;
@@ -145,20 +144,20 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://cdn.wallpapersafari.com/2/23/k2leNp.jpg" style="width:100%">
+ <a href="https://careers.google.com/" target="/"><img src="https://cdn.wallpapersafari.com/2/23/k2leNp.jpg" style="width:100%"></a>
   <div class="text"> TOP COMPANIES</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="https://www.wipro.com/content/dam/nexus/images/header/wipro-logo.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+<a href="https://careers.wipro.com/careers-home/" target="/"> <img src="https://www.wipro.com/content/dam/nexus/images/header/wipro-logo.jpg" style="width:100%"></a>
+ 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="https://cdn.hipwallpaper.com/i/82/7/Mp0LFZ.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+   <a href=" https://www2.deloitte.com/us/en.html" target="/"> <img src="https://cdn.hipwallpaper.com/i/82/7/Mp0LFZ.jpg" style="width:100%"></a>
+ 
 </div>
 
 </div>

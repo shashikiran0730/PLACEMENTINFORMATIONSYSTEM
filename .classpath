@@ -8,13 +8,13 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-13.0.1">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-15.0.1">
 		<attributes>
 			<attribute name="module" value="true"/>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/Telegram Desktop/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/Telegram Desktop/mysql-connector-java-8.0.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_281/lib/ext/mysql-connector-java-8.0.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_281/lib/ext/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

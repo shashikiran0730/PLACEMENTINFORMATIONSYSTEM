@@ -76,7 +76,7 @@ public class Validate {
     	 String  c="";
         try {          
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root",new Credentials().password);
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","@9848396526At");
             Statement ps = con.createStatement();
             String q="select  category from applications where  Email_Id like '"+email+"';";
             ResultSet rs =ps.executeQuery(q);
