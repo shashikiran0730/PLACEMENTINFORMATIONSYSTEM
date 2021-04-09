@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,24 +12,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import qwerty.user;
-
-/**
- * Servlet implementation class admin
- */
 @WebServlet("/admin")
 public class admin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public admin() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
+        super(); }
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException 
     {  
     	String emailadmin=req.getParameter("adminemail");
@@ -54,13 +41,11 @@ public class admin extends HttpServlet {
                   	rs.getString(8),
                   	rs.getString(9),
                   	rs.getString(10)
-          			));
-          	}
+          			));	}
           RequestDispatcher rd=req.getRequestDispatcher("admin.jsp");
           req.setAttribute("users",al);
           rd.forward(req,res);
-          con.close();
-      }
+          con.close();      }
       catch(Exception e) {
          System.out.println("error");
       }}
@@ -68,5 +53,4 @@ public class admin extends HttpServlet {
     		System.out.println("hyy");
     	}
   }   
-
 }
