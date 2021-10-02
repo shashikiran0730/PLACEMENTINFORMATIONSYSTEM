@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+input[type=text], input[type=password] {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
+button {
+  background: #5969f3;
+  color: #fff;
+  border-radius: 4px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+ 
+
+.container {
+  padding: 120px;
+}
+ 
+</style>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -10,6 +36,7 @@
 <body>
 <form action="editdetails" method="post">
 <input type="text" placeholder="enter your email" name="email">
+<br>
 <input type="submit" value="submit">
 </form>
 </body>

@@ -26,8 +26,8 @@ public class Validate {
         try {          
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root",new Credentials().password);
-            Statement ps = con.createStatement();
-            ResultSet rs =ps.executeQuery("select * from Student where email like '"+email+"';");
+            Statement s = con.createStatement();
+            ResultSet rs =s.executeQuery("select * from Student where email like '"+email+"';");
             String val = null;
             while(rs.next()) {
             	val=rs.getString(4);
@@ -77,9 +77,9 @@ public class Validate {
         try {          
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","@9848396526At");
-            Statement ps = con.createStatement();
+            Statement s = con.createStatement();
             String q="select  category from applications where  Email_Id like '"+email+"';";
-            ResultSet rs =ps.executeQuery(q);
+            ResultSet rs =s.executeQuery(q);
             System.out.println(q);
             while(rs.next()) {
             	c=rs.getString(1);

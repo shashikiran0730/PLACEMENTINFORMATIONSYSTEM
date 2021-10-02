@@ -26,6 +26,7 @@ public class delete extends HttpServlet {
 	             try{  
 	             	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root",new Credentials().password); 
 	                 PreparedStatement ps=con.prepareStatement("delete from student where email like '"+email+"';");  
+	                 
 	                 ps.executeUpdate();
 	                 con.close();
 	                 response.sendRedirect("index.jsp");

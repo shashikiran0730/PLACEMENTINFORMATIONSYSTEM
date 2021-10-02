@@ -14,7 +14,7 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_281/lib/ext/mysql-connector-java-8.0.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_291/lib/ext/mysql-connector-java-8.0.17.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_281/lib/ext/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
